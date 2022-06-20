@@ -364,8 +364,8 @@ $('.amenitie-box input').change(function() {
         <div class="row align-items-center">
             <div class="col-lg-3 col-md-4 col-sm-5 col-6">
                 <div class="site-logo">
-                    <a href="/booking/public/home">
-                    <img src="/booking/public/imgs/jbrlogo.png" class="img-fluid" alt="site-logo"></a>
+                    <a href="{{ url('home') }}">
+                    <img src="{{ url('imgs/jbrlogo.png') }}" class="img-fluid" alt="site-logo"></a>
                 </div>
             </div>
       <div class="col-lg-7 col-md-12 col-sm-12 col-12">

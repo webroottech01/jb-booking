@@ -69,7 +69,7 @@
                                                     <button type="button" data-bs-target="#carouselExampleIndicators{{$loop->index}}"
                                                         data-bs-slide-to="2" aria-label="Slide 3"></button>
                                                 </div> -->
-                                                <a style="text-decoration: none;" href="{{ '/booking/public/listing-details/' . $boardroom['id'] }}">
+                                                <a style="text-decoration: none;" href="{{ url('listing-details/' . $boardroom['id']) }}">
                                                 <div class="carousel-inner" style="height: 10rem">
 
                                                     @php $key = 0;@endphp
@@ -111,7 +111,7 @@
                                                 </a>  
 
                                             </div>
-                                            <a class="text-decoration-none" href="{{ '/booking/public/listing-details/' . $boardroom['id'] }}">
+                                            <a class="text-decoration-none" href="{{ url('listing-details/' . $boardroom['id']) }}">
                                                 <div class="card-body" style="font-family: 'Myriad Pro Semibold';">
                                                     <h5 class="card-title">{{ $boardroom['name'] }}</h5>
                                                     <p class="card-text">${{ $boardroom['price_per_hour'] }}/Hr

@@ -197,7 +197,7 @@
             var receiverId = $(".inbox-left-wrapper").find('.active').find('.receiverId').html();
 
             $.ajax({
-                url: "/booking/public/saveMessage",
+                url: @json(url('saveMessage'))",
                 type: "POST",
                 headers: headers,
                 data: {
@@ -239,7 +239,7 @@
             }
 
             $.ajax({
-                url: '/booking/public/getMessagepartial',
+                url: @json(url('getMessagepartial')),
                 type: 'POST',
                 headers: headers,
                 data: {
@@ -274,7 +274,7 @@
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
             }
             $.ajax({
-                url: '/booking/public/getSingleChat',
+                url:  @json(url('getSingleChat')),
                 type: 'POST',
                 headers: headers,
                 data: {
@@ -312,7 +312,7 @@
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
             }
             $.ajax({
-                url: '/booking/public/readMessage',
+                url: @json(url('readMessage')),
                 type: 'POST',
                 headers: headers,
                 data: {

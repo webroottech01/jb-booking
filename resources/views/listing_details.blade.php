@@ -685,7 +685,7 @@
                                 {{-- {{dd($boardroom)}} --}}
                                 
                                     <div class="col-xl-3 col-md-4 col-sm-6 col-10 mx-0 py-3">
-                                        <a style="text-decoration: none;"  href="{{ '/booking/public/listing-details/' . $boardroom['id'] }}">
+                                        <a style="text-decoration: none;"  href="{{ url('listing-details/' . $boardroom['id']) }}">
                                         <div class="card">
                                             <div id="carouselExampleIndicators{{$loop->index}}" class="carousel slide" data-bs-interval="0" data-bs-ride="carousel">
                                                 <!-- <div class="carousel-indicators">

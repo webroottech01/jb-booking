@@ -21,7 +21,7 @@
 						</div>
 					</div>
 					<p>This has been added to your Dashboard</p>
-					<center><a href="/booking/public/dashboard" class="btn btn-primary">GO TO MY DASHBOARD</a></center>
+					<center><a href="{{ url('dashboard')}}" class="btn btn-primary">GO TO MY DASHBOARD</a></center>
 				</div>	
 			</div>	
 		</div>

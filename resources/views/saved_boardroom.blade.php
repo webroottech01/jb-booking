@@ -21,7 +21,7 @@
                         
                             <div class="col-md-3 mx-0 py-3">
                                 <a style="text-decoration: none;"
-                            href="{{ '/booking/public/listing-details/' . $boardroom['id'] }}">
+                            href="{{ url('listing-details/' . $boardroom['id'] )}}">
                                 <div class="card">
                                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                                         <div class="carousel-indicators">

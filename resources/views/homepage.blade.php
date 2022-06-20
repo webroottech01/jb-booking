@@ -293,7 +293,7 @@ $('.amenitie-box input').change(function() {
 	</div>
 </header> --}}
     <div class="homebanner position-relative">
-        <img src="/booking/public/imgs/home-banner.jpg" class="img-fluid bannerimg" alt="site-banner">
+        <img src="{{asset('imgs/home-banner.jpg')}}" class="img-fluid bannerimg" alt="site-banner">
         <div class="banner-box">
             <form action="{{ route('search-listings') }}" method="get">
                 @csrf
