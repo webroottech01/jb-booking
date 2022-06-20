@@ -25,7 +25,7 @@
                 <div class="cardslider flex-wrap" id="mainslid">
                     @foreach ($listings as $boardroom)
                         <a style="text-decoration: none;"
-                            href="{{ '/booking/public/listing-details/' . $boardroom['id'] }}">
+                            href="{{ url('listing-details/' . $boardroom['id']) }}">
                             <div class="col-md-4 col-sm-5 mx-2 py-3 line-content">
                                 <div class="card">
                                     <div id="carouselExampleIndicators{{$loop->index}}" class="carousel slide" data-bs-interval="0"  data-bs-ride="carousel">
