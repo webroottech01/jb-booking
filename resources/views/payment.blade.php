@@ -72,9 +72,9 @@
                                 <h2 class="card-title">Add a Card</h2>
                                 <ul class="accepted-card">
 
-                                    <li><img src="/booking/public/imgs/visa.jpg" class="img-fluid" alt="build" /></li>
-                                    <li><img src="/booking/public/imgs/mc.jpg" class="img-fluid" alt="build" /></li>
-                                    <li><img src="/booking/public/imgs/amex.jpg" class="img-fluid" alt="build" /></li>
+                                    <li><img src="{{ url('imgs/visa.jpg')}}" class="img-fluid" alt="build" /></li>
+                                    <li><img src="{{ url('imgs/mc.jpg')}}" class="img-fluid" alt="build" /></li>
+                                    <li><img src="{{ url('imgs/amex.jpg')}}" class="img-fluid" alt="build" /></li>
                                     <li>accepted</li>
                                 </ul>
                                 <h2 class="price mt-4">${{ $request['calculate_rate'] }}</h3>
